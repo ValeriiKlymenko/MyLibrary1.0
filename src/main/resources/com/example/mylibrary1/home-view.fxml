@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF#FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylibrary1.HomeView">
+   <children>
+      <AnchorPane maxWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #EFF0F2#EFF0F2;">
+         <children>
+            <BorderPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #EFF0F2#EFF0F2; -fx-border-color: #000000; -fx-border-insets: 5;">
+               <center>
+                  <Label ellipsisString="" prefHeight="35.0" prefWidth="172.0" text="My Library v1.0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <Button fx:id="ButtonAddBook" layoutX="17.0" layoutY="133.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 20;" text="Додати книгу" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonWhatToRead" layoutX="17.0" layoutY="273.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="163.0" style="-fx-background-color: #000000#000000 #000000#000000; -fx-background-radius: 20;" text="Що почитати?" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonSearchBook" layoutX="17.0" layoutY="203.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="166.0" style="-fx-background-color: #000000#000000 #000000#000000; -fx-background-radius: 20;" text="Знайти книгу" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonMyLibrary" layoutX="17.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: #000000#000000 #000000#000000; -fx-background-radius: 20;" text="Моя бібліотека" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="60.0" layoutY="76.0" text="Меню">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="216.0" layoutY="14.0" text="Зараз я читаю:" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="211.0" layoutY="68.0" prefHeight="322.0" prefWidth="476.0" style="-fx-background-color: #EFF0F2#EFF0F2 #EFF0F2#EFF0F2;">
+         <children>
+            <Text layoutX="13.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тут буде view (Назва книги, назва автора, коли почав читати)" />
+            <Text layoutX="9.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Видалити, або закінчити читати книгу, або відкласти у бібліотеку)" />
+            <Label layoutX="8.0" layoutY="24.0" text="1.Сліди на дорозі. Валерій Маркус. ПЧ: 02.05.2022">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ButtonExit" layoutX="520.0" layoutY="13.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 20;" text="Змінити користувача" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

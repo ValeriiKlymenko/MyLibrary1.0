@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF#FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylibrary1.LoginRegistView">
+    <children>
+        <AnchorPane maxWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #EFF0F2#EFF0F2;">
+            <children>
+                <BorderPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #EFF0F2#EFF0F2; -fx-border-color: #000000; -fx-border-insets: 5;">
+                    <center>
+                        <Label ellipsisString="" prefHeight="35.0" prefWidth="172.0" text="My Library v1.0" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Label>
+                    </center>
+                </BorderPane>
+                <Button fx:id="ButtonLogin" layoutX="17.0" layoutY="250.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="163.0" style="-fx-background-color: #000000#000000 #000000#000000; -fx-background-radius: 20;" text="Вхід" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Label layoutX="60.0" layoutY="76.0" text="Вхід">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="TextFieldLoginLogin" layoutX="18.0" layoutY="140.0" promptText="login" />
+            <PasswordField fx:id="PasswordFieldLoginPassword" layoutX="18.0" layoutY="180.0" promptText="password" />
+            <Label fx:id="lableLoginText" layoutX="17.0" layoutY="219.0" prefHeight="17.0" prefWidth="163.0">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+          <Button fx:id="ButtonRegist" layoutX="350.0" layoutY="280.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: #000000#000000 #000000#000000; -fx-background-radius: 20;" text="Реєстрація" textFill="WHITE">
+              <font>
+                  <Font size="20.0" />
+              </font>
+          </Button>
+      <TextField fx:id="TextFieldRegistLogin" layoutX="496.0" layoutY="138.0" promptText="login" />
+      <PasswordField fx:id="PasswordFieldRegistPassword" layoutX="496.0" layoutY="178.0" promptText="password" />
+      <TextField fx:id="TextFieldRegistFirstName" layoutX="238.0" layoutY="118.0" promptText="first name" />
+      <TextField fx:id="TextFieldRegistLastName" layoutX="238.0" layoutY="158.0" promptText="last name" />
+      <TextField fx:id="TextFieldRegistMail" layoutX="238.0" layoutY="198.0" promptText="mail" />
+      <Label layoutX="359.0" layoutY="45.0" text="Реєстрація">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lableRegistText" layoutX="408.0" layoutY="244.0" prefHeight="18.0" prefWidth="88.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
